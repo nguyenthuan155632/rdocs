@@ -27,6 +27,7 @@ interface Suggestion {
 
 const LOCAL_SUGGESTIONS: Suggestion[] = [
   // Google Gemma family
+  { tag: 'gemma4:e2b', description: 'Google Gemma 4 E2B — default edge model, 128K ctx, multimodal', size: '~7.2GB', provider: 'ollama' },
   { tag: 'gemma3:27b', description: 'Google Gemma 3 27B — 128K ctx, multimodal, 140+ languages', size: '~17GB', provider: 'ollama' },
   { tag: 'gemma3:12b', description: 'Gemma 3 12B — balanced, 128K ctx', size: '~7.5GB', provider: 'ollama' },
   { tag: 'gemma3:4b', description: 'Gemma 3 4B — low-spec friendly', size: '~2.5GB', provider: 'ollama' },
@@ -403,7 +404,7 @@ export function modelCommand() {
       })
 
       const defaults: Record<string, { llm: string; embedding: string; embeddingProvider?: string }> = {
-        ollama: { llm: 'qwen2.5:14b', embedding: 'bge-m3' },
+        ollama: { llm: 'gemma4:e2b', embedding: 'bge-m3' },
         openai: { llm: 'gpt-4o', embedding: 'text-embedding-3-small' },
         anthropic: { llm: 'claude-sonnet-4-20250514', embedding: 'bge-m3', embeddingProvider: 'ollama' },
         google: { llm: 'gemini-2.5-flash', embedding: 'text-embedding-004' },

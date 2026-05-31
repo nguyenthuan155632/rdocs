@@ -11,6 +11,7 @@ services:
       - OPENDOCUMENTS_DATA_DIR=/data
       - NODE_ENV=production
       - OPENDOCUMENTS_MODEL_PROVIDER=ollama
+      - OPENDOCUMENTS_MODEL_LLM=gemma4:e2b
       - OPENDOCUMENTS_MODEL_BASE_URL=http://ollama:11434
       # Model provider — pick one and set the appropriate key/URL:
       #   Ollama (local, no key required):

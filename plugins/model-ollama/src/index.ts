@@ -21,7 +21,7 @@ export class OllamaModelPlugin implements ModelPlugin {
   capabilities = { llm: true, embedding: true, reranker: false, vision: false }
 
   private baseUrl = 'http://localhost:11434'
-  private llmModel = 'qwen2.5:14b'
+  private llmModel = 'gemma4:e2b'
   private embeddingModel = 'bge-m3'
 
   async setup(ctx: PluginContext): Promise<void> {

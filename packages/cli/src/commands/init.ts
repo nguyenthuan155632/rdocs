@@ -146,7 +146,7 @@ export function initCommand() {
       let baseUrl = ''
       let embeddingProvider: string | undefined
       let embeddingApiKey: string | undefined
-      let llmModel = 'qwen2.5:14b'
+      let llmModel = 'gemma4:e2b'
       let embeddingModel = 'bge-m3'
 
       if (backend === 'openai-compatible') {

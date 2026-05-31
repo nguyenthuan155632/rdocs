@@ -41,7 +41,7 @@ export const configSchema = z.object({
   mode: z.enum(['personal', 'team']).default('personal'),
   model: z.object({
     provider: z.string().default('ollama'),
-    llm: z.string().default('qwen2.5:14b'),
+    llm: z.string().default('gemma4:e2b'),
     embedding: z.string().default('bge-m3'),
     embeddingProvider: z.string().optional(),  // override for embedding (e.g., 'openai' when LLM is 'anthropic')
     apiKey: z.string().optional(),

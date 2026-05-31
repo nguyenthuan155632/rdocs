@@ -106,7 +106,7 @@ function createStubLLM(): ModelPlugin {
       yield '[ERROR] No LLM model configured. Please set up a model provider:\n'
       yield '  1. Install Ollama: https://ollama.com\n'
       yield '  2. Start Ollama: ollama serve\n'
-      yield '  3. Pull a model: ollama pull qwen2.5:14b\n'
+      yield '  3. Pull a model: ollama pull gemma4:e2b\n'
       yield '  4. Restart: opendocuments start\n'
     },
   }

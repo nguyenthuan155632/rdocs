@@ -13,7 +13,7 @@ export default defineConfig({
 
   model: {
     provider: 'ollama',     // 'ollama' | 'openai' | 'anthropic' | 'google' | 'grok' | 'deepseek' | 'mistral' | 'openai-compatible'
-    llm: 'qwen2.5:14b',
+    llm: 'gemma4:e2b',
     embedding: 'bge-m3',
     // embeddingProvider: 'openai',    // Use different provider for embeddings
     // apiKey: process.env.OPENAI_API_KEY,
@@ -74,7 +74,7 @@ export default defineConfig({
 ```typescript
 model: {
   provider: 'ollama',
-  llm: 'qwen2.5:14b',      // Any Ollama model: gemma3, gemma2, llama3.3, qwen2.5, phi4, deepseek-r1...
+  llm: 'gemma4:e2b',        // Any Ollama model: gemma4, gemma3, llama3.3, qwen2.5, phi4, deepseek-r1...
   embedding: 'bge-m3',
   baseUrl: 'http://localhost:11434',  // Default
 }
@@ -88,7 +88,7 @@ ollama pull gemma3:27b   # Gemma 3 flagship
 ollama pull gemma3:12b   # Balanced
 ollama pull gemma3:4b    # Low-spec
 ollama pull gemma3n      # Selective activation for laptops/phones
-ollama pull gemma4       # Newest release (if available)
+ollama pull gemma4:e2b   # Default edge model
 
 # Alibaba Qwen 3.5
 ollama pull qwen2.5:14b

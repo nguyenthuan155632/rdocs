@@ -77,7 +77,7 @@ export default defineConfig({
 
   model: {
     provider: 'ollama',        // or 'openai', 'anthropic', 'google', 'grok'
-    llm: 'qwen2.5:14b',
+    llm: 'gemma4:e2b',
     embedding: 'bge-m3',
   },
 

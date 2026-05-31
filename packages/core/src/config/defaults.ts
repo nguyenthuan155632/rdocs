@@ -3,7 +3,7 @@ import type { OpenDocumentsConfig } from './schema.js'
 export const DEFAULT_CONFIG: OpenDocumentsConfig = {
   workspace: 'default',
   mode: 'personal',
-  model: { provider: 'ollama', llm: 'qwen2.5:14b', embedding: 'bge-m3', embeddingProvider: undefined, apiKey: undefined, embeddingApiKey: undefined, baseUrl: undefined, embeddingDimensions: undefined },
+  model: { provider: 'ollama', llm: 'gemma4:e2b', embedding: 'bge-m3', embeddingProvider: undefined, apiKey: undefined, embeddingApiKey: undefined, baseUrl: undefined, embeddingDimensions: undefined },
   rag: { profile: 'balanced' },
   connectors: [],
   plugins: [],
